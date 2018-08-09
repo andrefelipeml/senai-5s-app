@@ -24,8 +24,6 @@ export class ForgotPasswordPage {
   }
 
   forgotPassword() {
-    //this.showLoader();
-    alert('email' +this.emailForgotPassword);
     this.authService.forgotPassword(this.emailForgotPassword).then((result) => {
       alert(true);
     }, (err) => {
