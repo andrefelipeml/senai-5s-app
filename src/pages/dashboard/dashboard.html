@@ -1,13 +1,8 @@
-<!--
-  Generated template for the DashboardPage page.
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Senai 5s</ion-title>
+    <ion-title text-left>Senai 5S</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -16,7 +11,7 @@
 <ion-content style="background-color: #2c3e50;">
     
   <div (click)="expandItem(item)">
-    <h2 text-center style="color:white">Avaliações</h2> >
+    <h2 text-center style="color:white">Avaliações</h2>
   </div>
   <ion-grid>
     <ion-card > 
@@ -88,7 +83,7 @@
       
       <ion-card-content *ngIf="showEvaluationsPending">   
         <ion-list>           
-          <ion-item>
+          <ion-item (click)="goToEvaluationResume()">
             <ion-avatar item-start>                     
               <ion-icon name="md-information-circle" style="color: #fae20bf6"></ion-icon>                      
             </ion-avatar>
@@ -96,7 +91,7 @@
             <h3>Data limite 10/03/2018 a 15/03/2018</h3>
             <p>Sala 105 - Bloco B</p>
           </ion-item>
-          <ion-item>
+          <ion-item (click)="goToEvaluationResume()">
             <ion-avatar item-start>                     
               <ion-icon name="md-information-circle" style="color: #fae20bf6"></ion-icon>                      
             </ion-avatar>
@@ -104,7 +99,7 @@
             <h3>Data limite 10/03/2018 a 15/03/2018</h3>
             <p>Sala 105 - Bloco B</p>
           </ion-item> 
-          <ion-item>
+          <ion-item (click)="goToEvaluationResume()">
             <ion-avatar item-start>                     
               <ion-icon name="md-information-circle" style="color: #fae20bf6"></ion-icon>                      
             </ion-avatar>
